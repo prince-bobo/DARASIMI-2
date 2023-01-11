@@ -34,14 +34,14 @@ label {
 }
 
 .btn {
-  height: 35px;
+  height: 38px;
   width: auto;
   cursor: pointer;
   color: gold;
   background-color: black;
   border-radius: 20px;
   border: 5px solid black;
-  padding: 2px;
+  padding: 20px;
 }
 
 button:hover {
