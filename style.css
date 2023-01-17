@@ -11,6 +11,11 @@ nav {
   font-size: 18px;
 }
 
+/* div {
+  background-color: yellow;
+  border: 5px solid black;
+} */
+
 article {
   margin-bottom: 60px;
 }
@@ -19,7 +24,8 @@ body {
   color: #444;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
-  /* background-image: img/image(23) .jpeg;*/
+
+  position: relative;
 }
 
 .container {
@@ -48,6 +54,7 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  /* border-right: 5px solid #1098ad; */
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
@@ -142,8 +149,8 @@ li:last-child {
   list-style: none;
 }
 
-/* body { 
-   background-color: orangered; 
+/* body {
+  background-color: orangered;
 } */
 
 /* .first-li {
@@ -202,4 +209,49 @@ nav a:link {
 
   margin-right: 30px;
   margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  font-size: 20px;
+  padding: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+
+  position: absolute;
+  /* top: 50px;
+  left: 50px; */
+  right: 50px;
+  bottom: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* h3 + p::first-line {
+  color: red;
+} */
+
+h2 {
+  /* background-color: orange; */
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
 }

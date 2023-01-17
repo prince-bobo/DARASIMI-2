@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SEARCH ENGINE</title>
+    <link rel="stylesheet" href="googlesearch.css" />
+  </head>
+
+  <body>
+    
+    <section>
+
+      <h1 style="padding-bottom:50px; margin-left:50px">
+        Daaring
+      </h1>
+
+      <div class="main">
+        <!--THIS IS FOR THE IMAGES-->
+        <div class="searchBx">
+          <input type="search" name="" class="query" value="" placeholder="search...">
+          <div class="icons">
+      </div>
+      <div class="button">
+        <button class="searchBtn">Search</button>
+      </div>
+    </section>
+
+    <script>
+     let query = document.querySelector('.query');
+     let searchBtn = document.querySelector('.searchBtn');
+
+     searchBtn.onclick = function(){
+      let url = 'https://www.google.com/search?q='+query.value;
+      window.open(url)
+     }
+    </script>
+  </body>
+</html>
